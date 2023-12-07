@@ -430,12 +430,12 @@ class _ProfileState extends State<Profile> {
                 ],
               ),
               SizedBox(height: 8,),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundImage: AssetImage('assets/girl.png'),
+                    backgroundImage: AssetImage('assets/img15.jpg',),
                   ),
                   Column(
                     children: [

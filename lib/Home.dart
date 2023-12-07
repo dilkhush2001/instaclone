@@ -164,29 +164,34 @@ class _HomeState extends State<Home> {
                         child: Column(
                           children:<Widget>[
                           Container(
-                          width: 90,
-                          height: 90,
-                          decoration: BoxDecoration(shape: BoxShape.circle, gradient: list[idx].color ?  LinearGradient(colors: [
-                            Colors.red,Colors.yellow, Colors.pinkAccent],
+                          width: 84,
+                          height: 84,
+                          decoration: BoxDecoration(shape: BoxShape.circle, gradient: list[idx].color ?   LinearGradient(colors: [
+                            Colors.red,Colors.redAccent, Colors.yellow.shade50,],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight
                           ) : null,
                             border: Border.all(
                               color: list[idx].color ? Colors.transparent : Colors.black26,
-                              width: 5.0,),),
-                        child: Center(
-                                child: Container(
-                                  height: 76,
-                                  width: 76,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(38),
-                                      image: DecorationImage(
-                                          image: AssetImage(list[idx].img),
-                                          fit: BoxFit.fill
-                                      )
+                              width: 4.0,),),
+                        child: CircleAvatar(
+                          radius: 37,
+                          backgroundColor: Colors.white,
+                          child: Center(
+                                  child: Container(
+                                    height: 72,
+                                    width: 72,
+                                    decoration: BoxDecoration(
+                                       // borderRadius: BorderRadius.circular(38),
+                                        shape: BoxShape.circle,
+                                        image: DecorationImage(
+                                            image: AssetImage(list[idx].img),
+                                            fit: BoxFit.fill
+                                        )
+                                    ),
                                   ),
                                 ),
-                              ),
+                        ),
                             ),
                             Text(list[idx].username)
                           ],

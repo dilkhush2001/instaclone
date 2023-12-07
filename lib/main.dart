@@ -23,7 +23,7 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Login(),
     );
@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
           Container(
             height: hi,
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                   colors: [Colors.indigo, Colors.indigoAccent,Colors.pink, Colors.pinkAccent],
                   begin: Alignment.topLeft,
